@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To My Valentine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6e6, #ffccd5);
+      color: #660033;
+      text-align: center;
+      padding: 60px 20px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      color: #b30059;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: 20px auto;
+      color: #4d0039;
+    }
+
+    .heart {
+      font-size: 3em;
+      margin: 20px 0;
+      color: red;
+    }
+
+    .song-cover {
+      margin: 30px auto;
+    }
+
+    .song-cover img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .song-cover img:hover {
+      transform: scale(1.05);
+    }
+
+    .spotify-embed {
+      margin-top: 30px;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #993366;
+    }
+
+    /* Floating Hearts Animation */
+    .floating-heart {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      animation: fall 7s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50px) translateX(0);
+      }
+      100% {
+        transform: translateY(100vh) translateX(30px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <script>
+    const heartCount = 30;
+    for (let i = 0; i < heartCount; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'floating-heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      heart.innerHTML = '❤️';
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <h1>to the prettiest boy alive</h1>
+
+  <p>
+    i love you so much, more than words can ever explain, i love every minute with you and these 6, almost 7, months with you are so amazing. 
+    i love everything about you and i look foward to every holiday with you, everything is ok with you and always will be, i adore you.
+  </p>
+
+  <p>
+    10.04.2024 ♡
+  </p>
+
+  <div class="heart">♥</div>
+
+  <div class="song-cover">
+    <a href="https://open.spotify.com/track/7nXJ5k4XgRj5OLg9m8V3zc" target="_blank">
+      <img src="https://i.scdn.co/image/ab67616d0000b273e32483b5fef69e6df3efb5f2" alt="We Fell In Love In October - girl in red">
+    </a>
+  </div>
+
+  <div class="spotify-embed">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7nXJ5k4XgRj5OLg9m8V3zc?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="footer">
+    Made with endless love by _________
+  </div>
+
+</body>
+</html>
